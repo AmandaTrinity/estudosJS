@@ -27,8 +27,8 @@ Para rodar qualquer exercício, basta usar o Node.js ou abrir o arquivo em um na
 
 1. Clone o repositório:
 
-	git clone https://github.com/seu-usuario/treinoJS.git  
-	cd treinoJS
+	git clone https://github.com/seu-usuario/estudosJS.git  
+	cd estudosJS
 
 2. Execute no terminal:
 
