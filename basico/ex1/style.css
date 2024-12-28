@@ -1,0 +1,16 @@
+div.container{
+    background-color: rgb(189, 208, 250);
+    width: 250px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+div.text{
+    text-align: center;
+}
+#botao{
+    align-items: center;
+    background-color:beige ;
+    margin: 8px;
+    align-items: center;
+}
