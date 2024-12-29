@@ -6,7 +6,7 @@ function clicar() {
     NomeCalculadoraIMC.innerText = 'Coloque todas as informações para saber seu Indíce de Massa Corporal!'
 }
 function calcular() {
-    let resultadoIMC = window.document.getElementById('botao')
+    let resultadoIMC = window.document.getElementById('calculo')
     let altura = window.document.getElementsByClassName('input')[1]
     var valorAltura = Number(altura.value)
     let peso = window.document.getElementsByClassName('input')[2]
