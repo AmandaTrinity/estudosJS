@@ -9,10 +9,10 @@ main{
     display: flex;
     flex-direction: column;
     border-radius: 16px;
-    box-shadow: 0 4 8px black;
     background-color: 
     rgb(189, 208, 250);
-    width: 1%;
+    width: 50% !important;
+    min-width: 250px;
     height: auto;
     align-items: center;
     justify-content: space-evenly;
