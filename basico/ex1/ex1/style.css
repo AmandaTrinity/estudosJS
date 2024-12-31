@@ -25,20 +25,35 @@ main{
     height: 5%;
     font: bold 2.5rem arial;
     text-align: center;
-    border-bottom: solid 4px rgb(17, 184, 206);
+    color: rgb(15, 61, 61);
+    border-bottom: solid 4px rgb(15, 61, 61);
     margin-bottom: 20px;
 }
-.input{
-    align-items: center;
-    margin: 10px;
-    align-items: baseline;
-}
-
-#calculo {
+.form {
+    justify-content: center;
     width: 100%;
+    height: 100%;
+}
+.input{
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.areadigitacao{
+    
+}
+.calculo {
+    width: 100%;
+    margin: 8px;
+    color: #ffffff !important;
+    background-color: rgb(15, 61, 61) !important;
+    border-color: #d1ff03;
 }
 
 .resultado {
-    width: 100%;
-    background-color: aqua;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    height: 100px;
 }
