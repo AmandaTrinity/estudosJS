@@ -12,22 +12,22 @@
             <div class="container">
                 <div class="title" >Calculadora IMC</div>
                 
-                <div class="form">
+                <div class="form" >
                     <div class="input">
-                        <label> Nome:</label>
-                        <input type="text"class="areadigitacao">
+                        <label for="nome"> Nome:</label>
+                        <input type="text"class="areadigitacao" id="nome" name="nome">
                     </div>
-                    <div class="input">
-                        <label> Altura:</label>
-                        <input type="number" class="areadigitacao">
+                    <div class="input" id="altura">
+                        <label for="altura"> Altura:</label>
+                        <input type="number" class="areadigitacao" id="altura" name="altura">
                     </div>
-                    <div class="input">
-                        <label> Peso:</label>
-                        <input type="number" class="areadigitacao">
+                    <div class="input" id="peso">
+                        <label for="peso"> Peso:</label>
+                        <input type="number" class="areadigitacao" id="peso" name="peso">
                     </div>
-                    <button type="button" class="btn calculo" onclick="calcular()">Calcular</button>
+                    <button type="button" class="btn calculo">Calcular</button>
                     
-                    <div class="resultado calculo hi"> Seu IMC é:</div>
+                    <div class="resultado calculo visually-hidden"id='value'> Seu IMC é:</div>
                 </div>
             </div>
         </main>
