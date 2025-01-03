@@ -1,35 +1,37 @@
-//Evento DOM
-const form = document.getElementById('form');
+   const botaoCalculo = document.getElementById('botaocalculo');
 
-form.addEventListener('submit', function (dados) {
-    dados.preventDefault();
-    
-    const altura = window.document.getElementById('altura').value;
-    const peso = window.document.getElementById('peso').value;
+    botaoCalculo.addEventListener('click', function () {
+        const altura = parseFloat(document.getElementById('altura').value);
+        const peso = parseFloat(document.getElementById('peso').value);
+        const nome = document.getElementById('nome').value;
 
-    const imc = number((peso / (altura ** 2)).toFixed(2))
+        if (isNaN(altura) || isNaN(peso)) {
+            alert('Por favor, insira valores válidos para altura e peso.');
+            return;
+        }
 
-    const value = document.getElementById('value')
-    let description = '';
+        const imc = (peso / (altura ** 2)).toFixed(2);
+        let description = '';
 
-    if (imc < 18, 5) {
-        description = 'magreza'
-    } else if (imc < 24, 9) {
-        description = 'Peso Normal'
-    } else if (resultado < 29,9){
-        description = 'Sobrepeso'
-    } else if (resultado < 34, 9) {
-        description = 'Obesidade Grau 1'
-    } else if (resultado < 39, 9) { 
-        description = 'Obesidade Grau 2'
-    } else if (resultado >= 40) {
-        description = 'Obesidade Grau 3'
-    };
+        if (imc < 18.5) {
+            description = 'Magreza';
+        } else if (imc < 24.9) { //obs: usp do ponto é melhor que vírgula
+            description = 'Peso Normal';
+        } else if (imc < 29.9) {
+            description = 'Sobrepeso';
+        } else if (imc < 34.9) {
+            description = 'Obesidade Grau 1';
+        } else if (imc < 39.9) {
+            description = 'Obesidade Grau 2';
+        } else {
+            description = 'Obesidade Grau 3';
+        }
 
-    
-    value.textContent = imc
-    document.getElementById('description').textContent = description;
-});
-document.getElementById("botaocalculo").addEventListener('click', () => {
-    document.getElementById('infos').hidden = false
-});
+        const valueElement = document.getElementById('value');
+        const descriptionElement = document.getElementById('description');
+
+        valueElement.textContent = `Olá ${nome}, seu IMC é ${imc}`;
+        descriptionElement.textContent = `Classificação: ${description}`;
+
+        document.getElementById('infos').hidden = false;
+    });
