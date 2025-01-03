@@ -17,7 +17,6 @@ botaoCalculo.addEventListener('click', function () {
         return;
     }
 
-    // Calculando o IMC e tratando como número
     const imc = peso / (altura ** 2);
     const imcFormatado = imc.toFixed(2).replace('.', ',');
 
