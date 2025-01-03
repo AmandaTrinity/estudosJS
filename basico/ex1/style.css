@@ -31,6 +31,7 @@ main{
 }
 .form {
     justify-content: center;
+    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -54,4 +55,10 @@ main{
     color: rgb(255, 255, 255);
     border-radius: 8px;
     height: 100px;
+}
+
+#value {
+    font-size: large;
+    font: bold;
+    border-bottom: solid 2px ;
 }
