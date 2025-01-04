@@ -21,8 +21,8 @@ footer{
 }
 .areatabuada{
     margin: 8px;
-    width:500px;
-    height: 200px;
+    width: 80%;
+    height: 90%;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -40,4 +40,24 @@ fieldset{
     display: flex;
     margin: 8px;
     gap:8px;
+}
+
+#buttonTabuada{
+    color: rgb(172, 102, 238);
+    background-color: rgba(0, 0, 0, 0.055);
+    border-radius: 999px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    /*margin: 16px;*/
+}
+
+#buttonTabuada:hover{
+    background:rgb(172, 102, 238);
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+}
+select{
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
 }

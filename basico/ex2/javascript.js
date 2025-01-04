@@ -1,8 +1,16 @@
 const GerarTabuada = document.getElementById('buttonTabuada');
-GerarTabuada.addEventListener(cancelIdleCallback, function (){
+GerarTabuada.addEventListener('click', function (){
     const Numeros = document.getElementById('numeros').value
+    const tab = document.getElementById('seltab')
 
-    for(var t=0;c<=10; c++){
-        console.log(t)
+    if (isNaN(Numeros)) {
+        alert('Por favor, insira valores válidos.');
+        return;
+    }
+    tab.innerHTML = ' '
+    for(var t=0;t<=10; t++){
+        let item = document.createElement('option')
+        item.textContent += `${Numeros} x ${t}  =  ${t * Numeros  };  `
+        tab.appendChild(item)
     }
 });
