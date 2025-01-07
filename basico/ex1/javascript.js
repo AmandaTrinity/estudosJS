@@ -1,7 +1,9 @@
+/*declarar variáveis fora da função seria o melhor para esse projeto?Não, pois ficaria variáveis globais
+O ideal é evitar Variáveis globais*/
 const botaoCalculo = document.getElementById('botaocalculo');
 
-botaoCalculo.addEventListener('click', function () {
-    const altura = parseFloat(document.getElementById('altura').value);
+botaoCalculo.addEventListener('click', function () {//Significado: "Presta atençaõ quando o botão for clicado,pois vc deve fazer tal ação"
+    const altura = parseFloat(document.getElementById('altura').value);  //Sem o '.value'. iria ter como resultando o elemento e não o seu valor
     const peso = parseFloat(document.getElementById('peso').value);
     const nome = document.getElementById('nome').value.toLowerCase();
     const nomeFormatado = nome.split(' ');
@@ -11,21 +13,21 @@ botaoCalculo.addEventListener('click', function () {
     }
 
     const nomeFinal = nomeFormatado.join(' ');
-
-    if (isNaN(altura) || isNaN(peso)) {
+    //Validação simples
+    if (isNaN(altura) || isNaN(peso)) {//Outro modo: if(nome!=='')
         alert('Por favor, insira valores válidos para altura e peso.');
         return;
     }
 
     const imc = peso / (altura ** 2);
-    const imcFormatado = imc.toFixed(2).replace('.', ',');
+    const imcFormatado = imc.toFixed(1).replace('.', ',');
 
     const valueElement = document.getElementById('value');
     const descriptionElement = document.getElementById('description');
     let classification = '';
 
     if (imc < 18.5) {
-        classification = 'Magreza';
+        classification = 'Abaixo do Peso';
         valueElement.style.color = 'rgb(189, 1, 1)';
     } else if (imc < 24.9) { 
         classification = 'Peso Normal';
@@ -45,8 +47,8 @@ botaoCalculo.addEventListener('click', function () {
     }
 
     const nomeTextElement = document.getElementById('nomeTexto');
-    nomeTextElement.textContent = `Olá ${nomeFinal}, seu IMC é:`;
-    valueElement.textContent = ` ${imcFormatado}`;
+    nomeTextElement.textContent = `Olá ${nomeFinal}, seu IMC é:`; //textContent, pois é o conteúdo dentro da div
+    valueElement.textContent = ` ${imcFormatado}`; //Dentro do acento grave é possível incluir variáveis
     descriptionElement.textContent = `Classificação: ${classification}`;
 
     document.getElementById('infos').hidden = false;

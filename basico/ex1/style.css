@@ -35,17 +35,17 @@ main{
     position: relative;
     width: 100%;
     height: 100%;
+    max-width: 300px;
 }
 .input{
+    width: 100%;
     margin: 8px;
     display: flex;
     justify-content: space-between;
-    
+    gap: 16px;
 }
 .areadigitacao{
-    width: 100%;
-    justify-content: flex-end;
-    margin: 0px 16px;
+    width: 80%;
 }
 
 .calculo {
