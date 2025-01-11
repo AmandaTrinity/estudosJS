@@ -6,35 +6,34 @@
 }
 body{
     background-image: url('../assets/show.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vw;
-    width: 100vh;
-    color: white;
     user-select: none;
+    color: white;
 }
-header{
+
+.header{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 16px;
     
 }
+
+
 h1{
     font-size: 50px;
     margin: 8px ;
 }
-section{
+.countdown{
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items: center;
-    
+
 }
-section div{
-    margin: 18px
-}
-.container{
-    background-color: #00000080;
-    height: 100vw;
-    width: 100vh;
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
