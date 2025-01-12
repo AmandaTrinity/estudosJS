@@ -9,6 +9,7 @@ var CadaSegundo = setInterval(function(){ //setInterval demora um tempo para dar
     var seconds = Math.floor( ( distancia % (1000 * 60))/ 1000)
 
     document.getElementById('dias').innerHTML = days;
-
-    
+    document.getElementById('minutos').innerHTML = minutes;
+    document.getElementById('horas').innerHTML = hours;
+    document.getElementById('segundos').innerHTML = seconds;
 })
