@@ -13,4 +13,6 @@ GerarTabuada.addEventListener('click', function (){
         item.textContent += `${Numeros} x ${t}  =  ${t * Numeros  };  `
         tab.appendChild(item)
     }
+
+    
 });
