@@ -13,31 +13,33 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
-    margin: 50px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000090;
 }
 
 .header{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 16px;
+    margin: 60px;
 }
-
-
 h1{
     font-size: 50px;
+    text-shadow: 0 0 8px whitesmoke;
     margin: 8px ;
 }
 .countdown{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    margin: 40px;
-
+    margin: 16px;
+}
+.tempo{
+    margin: 16px;
 }
 .button{
     cursor: pointer;
@@ -46,6 +48,7 @@ h1{
     color: black;
     border-radius: 8px;
     padding: 16px;
+    margin: 60px;
 }
 
 .button:hover{
