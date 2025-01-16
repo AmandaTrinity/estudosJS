@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial;
+}
+body{
+    background-color: rgb(208, 169, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+   background-color: rgba(132, 53, 206, 0.596);
+   color: white;
+   font-size: 20px;
+   text-align: center;
+   margin: 10%;
+}
+.to-do-item{
+    display: flex;
+    justify-content: space-between;
+}
+.to-do-item input {
+    color: rgb(255, 0, 0);
+    border-color: rgb(236, 21, 21);
+    border-radius: 4px;
+    padding: 2px;
+}
