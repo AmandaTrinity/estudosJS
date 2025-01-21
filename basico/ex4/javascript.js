@@ -50,9 +50,15 @@ const inserirItem = (evento) => {
          'status': evento
        
       })
-      atualizartela();
+      atualizartela(); 
+      evento.target.value = '' //limpar
     }
 }
-document.getElementById('DigiteItem').addEventListener('keypress',inserirItem); //o addEvent manda o evento que aconteceu
+const clickitem = (evento) => {
+    const elemento = evento.target;
+    console.log(elemento)
+}
 
+document.getElementById('DigiteItem').addEventListener('keypress',inserirItem); //o addEvent manda o evento que aconteceu
+document.getElementById('container').addEventListener('click', clickitem);
 atualizartela();
