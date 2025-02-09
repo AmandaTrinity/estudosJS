@@ -23,7 +23,7 @@ body{
     border-radius: 6px;
 }
 
-.entradaUser{
+.Display{
    padding: 16px;
     margin: 12px;
     overflow-wrap: break-word;
@@ -31,18 +31,18 @@ body{
    background-color:rgb(255, 255, 255) ;
 }
 
-.tecladoNum{
+.keyboardNum{
    padding: .2em;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
    gap: 3px;
 }
-.tecladoNum button{
+.keyboardNum button{
     cursor: pointer;
     height: 3em;
     font-size: 1.2em;
 }
-.tecladoNum button:hover{
+.keyboardNum button:hover{
     color: white;
     background-color: black;
 }
