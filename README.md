@@ -1,38 +1,36 @@
-# estudosJS
+# 💛 Estudos de JavaScript (Básico)
 
-Este repositório contém diversos exercícios em JavaScript que estou desenvolvendo para aprimorar minhas habilidades na linguagem. Os exercícios abordam diferentes níveis de dificuldade e cobrem tópicos variados, como lógica de programação, manipulação de DOM, funções, objetos, arrays, entre outros.
+Este repositório foi criado para documentar e organizar os meus estudos práticos de **JavaScript**. Ele contém uma série de exercícios focados na manipulação do DOM, lógica de programação e interação com o utilizador via navegador.
 
-# Objetivo
+## 🎯 Objetivo
 
-Meu objetivo com este repositório é praticar constantemente e consolidar os conceitos fundamentais de JavaScript, além de registrar meu progresso ao longo do tempo.
+O objetivo deste projeto é consolidar os conceitos fundamentais da linguagem através da criação de pequenos projetos funcionais, explorando:
 
-# Estrutura
+- Manipulação de elementos HTML via JavaScript.
+- Aplicação de estilos dinâmicos com CSS.
+- Escuta e tratamento de eventos (clicks, inputs, etc.).
+- Lógica de programação (variáveis, funções e condições).
 
-Os exercícios estão organizados da seguinte maneira:
+## 📂 Estrutura de Exercícios
 
--Cada exercício possui seu próprio arquivo .js ou diretório, dependendo da complexidade.
+Atualmente, o repositório foca-se em exercícios de nível **básico**, organizados da seguinte forma:
 
--A estrutura segue a seguinte organização:
+- **Ex1 ao Ex5**: Pequenas aplicações independentes que demonstram o uso de JavaScript integrado ao HTML/CSS.
+- **Assets**: Recursos visuais utilizados nos projetos, como imagens para demonstração.
 
-/exercicios-js
-├── básico/
-├── intermediário/
-├── avançado/
-├── desafios/
-└── projetos/
+## 🛠️ Tecnologias Utilizadas
 
-# Como Executar
+- **JavaScript (ES6+)**: Lógica e interatividade.
+- **HTML5**: Estruturação dos exercícios.
+- **CSS3**: Estilização das interfaces.
 
-Para rodar qualquer exercício, basta usar o Node.js ou abrir o arquivo em um navegador, dependendo do contexto:
+## 🚀 Como Visualizar os Exercícios
+
+Como são projetos de front-end básico, você pode visualizá-los diretamente no seu navegador:
 
 1. Clone o repositório:
-
-	git clone https://github.com/seu-usuario/estudosJS.git  
-	cd estudosJS
-
-2. Execute no terminal:
-
-	node caminho-do-arquivo.js
-
-
-3. Ou abra no navegador para visualizar interações com HTML/DOM.
+```bash
+git clone https://github.com/amandatrinity/estudosjs.git
+```
+2. Navegue até a pasta do exercício desejado (ex: basico/ex1/).
+3. Abra o arquivo index.html em qualquer navegador (Chrome, Firefox, Edge, etc.).
